@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+models/*.keras
+models/*.h5
+*.egg-info/
+dist/
+build/
+
+# Local scratch images from dev
+/t.png
+/t2.png

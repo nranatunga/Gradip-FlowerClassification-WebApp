@@ -1,13 +1,13 @@
-import gradio as gr
+"""Launch the Gradio app without an editable install (adds `src` to import path)."""
 
-def greet(name, intensity):
-    return "Hello, " + name + "!" * int(intensity)
+import sys
+from pathlib import Path
 
-demo = gr.Interface(
-    fn=greet,
-    inputs=["text", "slider"],
-    outputs=["text"],
-    api_name="predict"
-)
+_ROOT = Path(__file__).resolve().parent
+if str(_ROOT / "src") not in sys.path:
+    sys.path.insert(0, str(_ROOT / "src"))
 
-demo.launch()
+from flower_classifier.app import main
+
+if __name__ == "__main__":
+    main()

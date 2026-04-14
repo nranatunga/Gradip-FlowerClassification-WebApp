@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flower-classifier"
+version = "0.1.0"
+description = "Flower image classification with Gradio (TensorFlow tutorial model)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "tensorflow>=2.15,<2.20",
+    "gradio>=4.0,<6",
+    "numpy>=1.24,<3",
+    "pillow>=10.0,<12",
+    "matplotlib>=3.8,<4",
+    "shap>=0.44,<0.50",
+    "opencv-python-headless>=4.8,<5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+flower-train = "flower_classifier.train:main"
+flower-app = "flower_classifier.app:main"

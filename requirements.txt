@@ -1,0 +1,7 @@
+tensorflow>=2.15,<2.20
+gradio>=4.0,<6
+numpy>=1.24,<3
+pillow>=10.0,<12
+matplotlib>=3.8,<4
+shap>=0.44,<0.50
+opencv-python-headless>=4.8,<5
