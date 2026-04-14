@@ -2,11 +2,12 @@
 
 A small **portfolio-style** project that trains a convolutional neural network on the TensorFlow **flower photos** dataset and serves it through a **Gradio** web UI. Beyond raw predictions, the app compares two **explainability** approaches—**Grad-CAM** (gradient-based, local) and **SHAP** (game-theoretic attributions via `shap.Explainer`)—so you can see *where* the model looks in an image, not only *what* it predicts.
 
-![Legacy UI reference](https://user-images.githubusercontent.com/54833985/115492155-dcdd4600-a27e-11eb-857a-b7acdb564cbc.png)
+<img width="716" height="367" alt="gradio " src="https://github.com/user-attachments/assets/5db2055c-63b3-4f69-8cc2-f6c2b74e507c" />
+
 
 ---
 
-## What this project demonstrates (for employers and reviewers)
+## What this project demonstrates
 
 This work is meant to show hands-on familiarity with ideas that matter in applied ML and responsible AI:
 
@@ -19,6 +20,11 @@ This work is meant to show hands-on familiarity with ideas that matter in applie
 | **Software engineering** | Modular Python package under `src/`, pinned dependencies, training script vs. app entry points, `.gitignore` for large model files. |
 
 We can articulate **trade-offs**: Grad-CAM is fast and standard for CNNs; SHAP image explanations are heavier and depend on the masker and evaluation budget. Neither is “ground truth”—both support **human review** and **debugging**, not automatic fairness or causality.
+
+
+<img width="685" height="850" alt="gradio 1 daisy" src="https://github.com/user-attachments/assets/45e57edf-e630-47ac-990c-153fe28a7acb" />
+
+<img width="708" height="623" alt="gradio 2 daisy grad cam" src="https://github.com/user-attachments/assets/2e0aeea7-1380-4d74-9b16-34fb8c346d90" />
 
 ---
 
