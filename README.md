@@ -123,7 +123,3 @@ models/           # Put trained `flower_model.keras` here (gitignored)
 This project extends the workflow from the classic TensorFlow **flower classification** tutorial (small CNN on the public flower_photos archive). An older walkthrough video from the repo author: [YouTube](https://www.youtube.com/watch?v=aZ4wV4V_p9E).
 
 ---
-
-## License
-
-Add a `LICENSE` file if you open-source the repo; none is bundled here by default.
